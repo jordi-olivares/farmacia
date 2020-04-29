@@ -18,10 +18,10 @@ header {
 #navbar {
   padding: 0;
   margin: 0;
-  background-color: green; }
+  background-color: rgba(0, 111, 111, 0.8); }
 
 .container {
-  background-color: green;
+  background-color: rgba(0, 111, 111, 0.8);
   margin: 0;
   padding: 0;
   display: flex;
@@ -49,7 +49,7 @@ header {
   display: flex;
   width: 2em;
   height: 2em;
-  background-color: rgba(131, 197, 111, 0.8);
+  background-color: rgba(0, 111, 111, 0.3);
   border-radius: 50%;
   font-size: 1.2rem;
   justify-content: center;
@@ -63,7 +63,7 @@ header {
   display: flex;
   width: 2em;
   height: 2em;
-  background-color: rgba(131, 197, 111, 0.8);
+  background-color: rgba(0, 111, 111, 0.3);
   border-radius: 50%;
   font-size: 1.2rem;
   justify-content: center;
@@ -75,7 +75,7 @@ header {
 
 .menu-usuario {
   position: fixed;
-  background-color: rgba(131, 197, 111, 0.8);
+  background-color: rgba(0, 111, 111, 0.5);
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -97,7 +97,7 @@ header {
 
 .menu-burger {
   position: fixed;
-  background-color: rgba(131, 197, 111, 0.8);
+  background-color: rgba(0, 111, 111, 0.5);
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -114,12 +114,12 @@ header {
   .menu-burger form {
     display: flex;
     flex-wrap: nowrap;
-    border: 2px #015201 solid;
+    border: 2px  solid;
     border-radius: 10%; }
     .menu-burger form i {
       margin-left: 0;
       font-size: 1em;
-      background-color: #2e691c;
+      background-color: #006f6f;
       display: flex;
       width: 1.6rem;
       height: 1.6rem;
@@ -140,7 +140,7 @@ header {
   display: flex;
   width: 2em;
   height: 2em;
-  background-color: rgba(131, 197, 111, 0.8);
+  background-color: rgba(0, 111, 111, 0.3);
   border-radius: 50%;
   font-size: 1.2rem;
   justify-content: center;
@@ -177,7 +177,7 @@ header {
   .hero .slogan {
     position: absolute;
     z-index: 2;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 77, 77, 0.9);
     font-size: 2em; }
   .hero img {
     position: absolute;
@@ -208,7 +208,7 @@ header {
     position: absolute;
     bottom: 0;
     height: 100%;
-    background-color: green;
+    background-color: rgba(0, 111, 111, 0.8);
     border-radius: 0;
     color: white; }
 
@@ -261,7 +261,9 @@ header {
 
   .hero {
     height: 100vh;
-    align-items: center; } }
+    align-items: center; }
+    .hero .slogan {
+      font-size: 2.4em; } }
 @font-face {
   font-family: 'icomoon';
   src: url("../../iconos/fonts/icomoon.eot?vbqzoq");

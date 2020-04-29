@@ -1,6 +1,6 @@
 @mixin menuFixed {
     position: fixed;
-    background-color: rgba($color: #83c56f, $alpha: 0.8);
+    background-color:  rgba(0, 111, 111, 0.5);
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -19,7 +19,7 @@
     display: flex;
     width: 2em;
     height: 2em;
-    background-color: rgba($color: #83c56f, $alpha: 0.8);
+    background-color:  rgba(0, 111, 111, 0.3);
     border-radius: 50%;
     font-size: 1.2rem;
     justify-content: center;

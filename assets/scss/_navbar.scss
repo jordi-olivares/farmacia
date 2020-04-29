@@ -5,10 +5,10 @@ header{
 #navbar{
     padding: 0;
     margin: 0;
-    background-color: green;
+    background-color: rgba(0, 111, 111, 0.8);
 }
 .container{
-    background-color: green;
+    background-color: rgba(0, 111, 111, 0.8);
     margin: 0;
     padding: 0;
     display: flex;
@@ -61,12 +61,12 @@ header{
     form{
         display: flex;
         flex-wrap: nowrap;
-        border: 2px rgb(1, 82, 1) solid;
+        border: 2px  solid;
         border-radius: 10%;
         i{
             margin-left: 0;
             font-size: 1em;
-            background-color: rgba($color: #2e691c, $alpha: 1);
+            background-color: rgba(0, 111, 111, 1);
             display: flex;
             width: 1.6rem;
             height: 1.6rem;
