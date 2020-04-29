@@ -30,6 +30,9 @@
     #burger:hover{
         color: peru;
     }
+    .hero{
+        height: 60vh;
+    }
 }
 @media screen and (min-width:768px){
     #navbar{
@@ -61,6 +64,9 @@
     .menu-usuario,.menu-burger{
         margin-top: 2.5em;
     }
+    .hero{
+       height: 90vh;
+    }
 }
 @media screen and (min-width:1024px){
     .container{
@@ -69,5 +75,8 @@
     .menu-burger,.menu-usuario{
         width: 22vw;
     }
-    
+    .hero{
+        height: 100vh;
+        align-items: center;
+    }
 }

@@ -36,7 +36,7 @@ header {
     color: white;
     margin-left: .4em;
     font-size: 1.4em;
-    margin-right: .4em; }
+    margin-right: .6em; }
   .container p {
     display: inline;
     font-size: 1.2em;
@@ -56,7 +56,7 @@ header {
   align-items: center;
   position: fixed;
   color: white;
-  z-index: 2;
+  z-index: 4;
   right: .4em; }
 
 #burger {
@@ -70,7 +70,7 @@ header {
   align-items: center;
   position: fixed;
   color: white;
-  z-index: 2;
+  z-index: 4;
   left: .4em; }
 
 .menu-usuario {
@@ -87,7 +87,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  z-index: 1;
+  z-index: 3;
   transition: 0.9s; }
   .menu-usuario a {
     display: block;
@@ -109,7 +109,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  z-index: 1;
+  z-index: 3;
   transition: 0.9s; }
   .menu-burger form {
     display: flex;
@@ -147,7 +147,7 @@ header {
   align-items: center;
   position: fixed;
   color: white;
-  z-index: 2;
+  z-index: 4;
   right: 1.4rem;
   bottom: 1.4rem; }
 
@@ -164,6 +164,30 @@ header {
   position: relative;
   display: none;
   z-index: 2; }
+
+.hero {
+  margin: 0;
+  height: 50vh;
+  width: 100vw;
+  background-color: grey;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center; }
+  .hero .slogan {
+    position: absolute;
+    z-index: 2;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 2em; }
+  .hero img {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1; }
 
 .contenido {
   width: 100vw;
@@ -198,7 +222,10 @@ header {
     color: peru; }
 
   #burger:hover {
-    color: peru; } }
+    color: peru; }
+
+  .hero {
+    height: 60vh; } }
 @media screen and (min-width: 768px) {
   #navbar div div i {
     margin-left: .4em; }
@@ -221,13 +248,20 @@ header {
     color: peru; }
 
   .menu-usuario, .menu-burger {
-    margin-top: 2.5em; } }
+    margin-top: 2.5em; }
+
+  .hero {
+    height: 90vh; } }
 @media screen and (min-width: 1024px) {
   .container {
     font-size: 18px; }
 
   .menu-burger, .menu-usuario {
-    width: 22vw; } }
+    width: 22vw; }
+
+  .hero {
+    height: 100vh;
+    align-items: center; } }
 @font-face {
   font-family: 'icomoon';
   src: url("../../iconos/fonts/icomoon.eot?vbqzoq");
