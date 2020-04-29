@@ -1,0 +1,73 @@
+@media screen and (min-width:320px){}
+@media screen and (min-width:480px){
+    #navbar{
+        position: relative;
+        div{
+            div{
+                i{
+                    margin-left: 2em;
+                }
+            }
+        }
+    }
+    #usuarios,#burger{
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        background-color: green;
+        border-radius: 0;
+        color: white;
+    }
+    #usuarios{
+        right: 2em;
+    }
+    #burger{
+        left: 0;
+    }
+    #usuarios:hover{
+        color: peru;
+    }
+    #burger:hover{
+        color: peru;
+    }
+}
+@media screen and (min-width:768px){
+    #navbar{
+        div{
+            div{
+                i{
+                    margin-left: .4em;
+                }
+            }
+        }
+    }
+    #usuarios,#burger{
+        display: none;
+    }
+    #u-ipad{
+        display: initial;
+        margin-right: 2em;
+    }
+    #m-ipad{
+        display: initial;
+        margin-right: 2em;
+    }
+    #u-ipad:hover{
+        color: peru;
+    }
+    #m-ipad:hover{
+        color: peru;
+    }
+    .menu-usuario,.menu-burger{
+        margin-top: 2.5em;
+    }
+}
+@media screen and (min-width:1024px){
+    .container{
+        font-size: 18px;
+    }
+    .menu-burger,.menu-usuario{
+        width: 22vw;
+    }
+    
+}

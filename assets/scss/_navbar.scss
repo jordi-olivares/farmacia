@@ -1,0 +1,112 @@
+@import "mixins";
+header{
+    width: 100%;
+}
+#navbar{
+    padding: 0;
+    margin: 0;
+    background-color: green;
+}
+.container{
+    background-color: green;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: 2em;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    right: 0;
+    left: 0;
+    a,i{
+        color: white;
+        margin-left: .4em;
+        font-size: 1.4em;
+        margin-right: .4em;
+    }
+    p{
+        display: inline;
+        font-size: 1.2em;
+        margin-left: .6em;
+        color: white;
+    }
+    a:hover{
+        color:peru;
+    }
+}
+
+
+#usuarios{
+    @include iconoMenu;
+    right: .4em;
+}
+#burger{
+    @include iconoMenu;
+    left: .4em;
+}
+
+.menu-usuario{
+   @include menuFixed;
+    a{
+        display: block;
+        text-align: center;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+    }
+}
+
+.menu-burger{
+    @include menuFixed;
+    form{
+        display: flex;
+        flex-wrap: nowrap;
+        border: 2px rgb(1, 82, 1) solid;
+        border-radius: 10%;
+        i{
+            margin-left: 0;
+            font-size: 1em;
+            background-color: rgba($color: #2e691c, $alpha: 1);
+            display: flex;
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        input{
+            border: 3px green solid;
+        }
+    }
+    
+    a{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+}
+
+.is-active{
+    left: 0;
+}
+
+#inicio{
+    @include iconoMenu;
+    right: 1.4rem;
+    bottom: 1.4rem;
+}
+#inicio:active{
+    font-size: large;
+    color: peru;
+}
+
+#u-ipad{
+    display: none;
+    position: relative;
+    z-index: 2;
+}
+#m-ipad{
+    position: relative;
+    display: none;
+    z-index: 2;
+}
