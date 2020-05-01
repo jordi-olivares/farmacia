@@ -31,7 +31,15 @@
         color: peru;
     }
     .hero{
-        height: 60vh;
+        height: 60vw;
+    }
+    .contenido{
+        .tarjeta{
+            height: 100vw;
+            .promocion{
+                margin-bottom: 0;
+            }
+        }
     }
 }
 @media screen and (min-width:768px){
@@ -65,7 +73,7 @@
         margin-top: 2.5em;
     }
     .hero{
-       height: 90vh;
+       height: 80vw;
     }
 }
 @media screen and (min-width:1024px){
@@ -76,7 +84,7 @@
         width: 22vw;
     }
     .hero{
-        height: 100vh;
+        height: 100vw;
         align-items: center;
         .slogan{
             font-size: 2.4em;

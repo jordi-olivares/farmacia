@@ -167,7 +167,7 @@ header {
 
 .hero {
   margin: 0;
-  height: 50vh;
+  height: 50vw;
   width: 100vw;
   background-color: grey;
   background-repeat: no-repeat;
@@ -178,7 +178,8 @@ header {
     position: absolute;
     z-index: 2;
     color: #004d4d;
-    font-size: 2em; }
+    font-size: 2em;
+    box-shadow: 2px 2px 5px #999; }
   .hero img {
     position: absolute;
     bottom: 0;
@@ -192,16 +193,21 @@ header {
 .contenido {
   width: 100vw;
   position: relative;
-  margin-top: 0; }
-  .contenido #izquierda, .contenido #derecha {
-    bottom: 50%;
-    font-size: 2em;
-    position: absolute;
-    color: rgba(0, 0, 0, 0.5); }
-  .contenido #izquierda {
-    left: 0; }
-  .contenido #derecha {
-    right: 0; }
+  margin-top: 0;
+  /* #izquierda,#derecha{
+      /*bottom: 50%;
+      top:50vh;
+      font-size: 2em;
+      position: absolute;
+      color: rgba(0,0,0,0.5);
+      z-index: 2;
+  }
+  #izquierda{  
+      left: 0;
+  }
+  #derecha{
+      right: 0;
+  } */ }
   .contenido .tarjeta {
     margin: 2vw;
     border: solid 1px black;
@@ -209,7 +215,7 @@ header {
     box-shadow: 2px 2px 5px #999;
     background-color: white;
     text-align: center;
-    height: 80vh;
+    height: 100vw;
     padding: 0.3em 0.3em 0 0.3em; }
     .contenido .tarjeta img {
       width: 100%;
@@ -228,6 +234,9 @@ header {
       border: solid 1px black;
       border-radius: 3px; }
 
+/* #familia,#salud{
+    display: none;
+} */
 html {
   background-color: rgba(80, 77, 74, 0.158); }
 
@@ -258,7 +267,12 @@ html {
     color: peru; }
 
   .hero {
-    height: 60vh; } }
+    height: 60vw; }
+
+  .contenido .tarjeta {
+    height: 100vw; }
+    .contenido .tarjeta .promocion {
+      margin-bottom: 0; } }
 @media screen and (min-width: 768px) {
   #navbar div div i {
     margin-left: .4em; }
@@ -284,7 +298,7 @@ html {
     margin-top: 2.5em; }
 
   .hero {
-    height: 90vh; } }
+    height: 80vw; } }
 @media screen and (min-width: 1024px) {
   .container {
     font-size: 18px; }
@@ -293,10 +307,23 @@ html {
     width: 22vw; }
 
   .hero {
-    height: 100vh;
+    height: 100vw;
     align-items: center; }
     .hero .slogan {
       font-size: 2.4em; } }
+footer {
+  height: 160px;
+  width: 100vw;
+  display: flex;
+  background-color: rgba(0, 111, 111, 0.6);
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 5px #999; }
+  footer a {
+    color: white;
+    margin-bottom: 0.4em;
+    margin-top: 0.4em; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../../iconos/fonts/icomoon.eot?vbqzoq");

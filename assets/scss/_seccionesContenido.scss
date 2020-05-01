@@ -2,18 +2,20 @@
     width: 100vw;
     position: relative;
     margin-top: 0;
-    #izquierda,#derecha{
-        bottom: 50%;
+    /* #izquierda,#derecha{
+        /*bottom: 50%;
+        top:50vh;
         font-size: 2em;
         position: absolute;
         color: rgba(0,0,0,0.5);
+        z-index: 2;
     }
     #izquierda{  
         left: 0;
     }
     #derecha{
         right: 0;
-    }
+    } */
     .tarjeta{
         margin:2vw;
         border: solid 1px black;
@@ -21,8 +23,10 @@
         box-shadow: 2px 2px 5px #999;
         background-color: white;
         text-align: center;
-        height: 80vh;
+        height: 100vw;
         padding: 0.3em 0.3em 0 0.3em;
+        
+
         img{
             width: 100%;
             height: 75%;
@@ -44,6 +48,9 @@
         }
     }
 }
+/* #familia,#salud{
+    display: none;
+} */
 html{
     background-color: rgba(80, 77, 74, 0.158);
 }
