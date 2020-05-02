@@ -46,3 +46,24 @@ function ISHBurger() {
         menuBurger.classList.add('is-active');
     }
 } 
+
+
+$(document).ready(function(){
+    $("#derecha").toggle(
+        function name() {$("#texto").text('La familia es lo primero, protejamolsa juntos');
+        $('#cambio').replaceWith('<img id="cambio" src="./assets/images/familia.jpeg">');
+         }, 
+        function name() {$("#texto").text('La salud es lo único que tenemos');
+        $('#cambio').replaceWith('<img id="cambio" src="./assets/images/salud.jpeg">');
+         },  
+        function name() {$("#texto").text('La nutrición es la base de la salud');
+        $('#cambio').replaceWith('<img id="cambio" src="./assets/images/nutricion.jpeg">');
+         }
+    )
+});
+
+/* $(document).ready(function() {  
+    $('#boton').click(function(){
+       $('#cambio').replaceWith('<img id="cambio" src="nutricion.jpeg">');
+    });
+}); */

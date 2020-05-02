@@ -57,7 +57,7 @@ header {
   position: fixed;
   color: white;
   z-index: 4;
-  right: .6em; }
+  right: .4em; }
 
 #burger {
   display: flex;
@@ -71,7 +71,7 @@ header {
   position: fixed;
   color: white;
   z-index: 4;
-  left: .6em; }
+  left: .4em; }
 
 .menu-usuario {
   position: fixed;
@@ -165,6 +165,10 @@ header {
   display: none;
   z-index: 2; }
 
+body {
+  margin: 0;
+  padding: 0; }
+
 .hero {
   margin: 0;
   height: 50vw;
@@ -193,21 +197,18 @@ header {
 .contenido {
   width: 100vw;
   position: relative;
-  margin-top: 0;
-  /* #izquierda,#derecha{
-      /*bottom: 50%;
-      top:50vh;
-      font-size: 2em;
-      position: absolute;
-      color: rgba(0,0,0,0.5);
-      z-index: 2;
-  }
-  #izquierda{  
-      left: 0;
-  }
-  #derecha{
-      right: 0;
-  } */ }
+  margin-top: 0; }
+  .contenido #izquierda, .contenido #derecha {
+    bottom: 50%;
+    top: 50vh;
+    font-size: 2em;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.5);
+    z-index: 2; }
+  .contenido #izquierda {
+    left: 0; }
+  .contenido #derecha {
+    right: 0; }
   .contenido .tarjeta {
     margin: 2vw;
     border: solid 1px black;
@@ -215,7 +216,7 @@ header {
     box-shadow: 2px 2px 5px #999;
     background-color: white;
     text-align: center;
-    height: 100vw;
+    height: 85vw;
     padding: 0.3em 0.3em 0 0.3em; }
     .contenido .tarjeta img {
       width: 100%;
@@ -233,6 +234,8 @@ header {
       margin-top: 0.2em;
       border: solid 1px black;
       border-radius: 3px; }
+  .contenido #izquierda {
+    display: none; }
 
 /* #familia,#salud{
     display: none;
@@ -240,6 +243,9 @@ header {
 html {
   background-color: rgba(80, 77, 74, 0.158); }
 
+@media screen and (min-width: 320px) {
+  .contenido #nutricion, .contenido #familia, .contenido #salud, .contenido #nutricion2 {
+    display: none; } }
 @media screen and (min-width: 480px) {
   #navbar {
     position: relative; }
@@ -270,9 +276,11 @@ html {
     height: 60vw; }
 
   .contenido .tarjeta {
-    height: 100vw; }
+    height: 80vw; }
     .contenido .tarjeta .promocion {
-      margin-bottom: 0; } }
+      margin-bottom: 0; }
+    .contenido .tarjeta img {
+      height: 75%; } }
 @media screen and (min-width: 768px) {
   #navbar div div i {
     margin-left: .4em; }
@@ -298,7 +306,22 @@ html {
     margin-top: 2.5em; }
 
   .hero {
-    height: 80vw; } }
+    height: 80vw; }
+
+  .contenido {
+    display: flex;
+    flex-wrap: wrap; }
+    .contenido .tarjeta {
+      width: 44vw;
+      height: 35vw; }
+      .contenido .tarjeta img {
+        height: 70%; }
+    .contenido #nutricion, .contenido #familia, .contenido #salud, .contenido #nutricion2 {
+      display: block; }
+    .contenido #izquierda, .contenido #derecha {
+      display: none; }
+    .contenido #nutricionC {
+      display: none; } }
 @media screen and (min-width: 1024px) {
   .container {
     font-size: 18px; }
@@ -311,6 +334,19 @@ html {
     align-items: center; }
     .hero .slogan {
       font-size: 2.4em; } }
+@media screen and (min-width: 1024px) {
+  .contenido {
+    justify-content: center;
+    /* #nutricion2{
+        align-self: center;
+        margin-left: 50vw;
+        margin-right: 50vw;
+    } */ }
+    .contenido .tarjeta {
+      height: 30vw;
+      width: 28vw; }
+      .contenido .tarjeta img {
+        height: 75%; } }
 footer {
   height: 160px;
   width: 100vw;
